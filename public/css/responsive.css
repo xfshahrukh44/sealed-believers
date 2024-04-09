@@ -1,0 +1,31 @@
+@media (max-width: 1440px) {
+    .discover-book h1 {
+      font-size: 45px;
+    }
+
+    .discover-book .top-para:before {
+      left: 135px;
+    }
+
+    .discover-book .top-para:after {
+      right: 135px;
+    }
+
+    .discover-book p {
+      width: 75%;
+    }
+
+    .I-G-content h5 {
+      font-size: 15px;
+    }
+
+    .I-G-content p {
+      font-size: 12px;
+    }
+    .navbar-nav li {
+      padding: 0px 12px;
+  }
+  .top-btn {
+      padding: 10px 20px;
+  }
+  }

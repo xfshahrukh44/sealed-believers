@@ -1,0 +1,564 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: "Lato", sans-serif;
+    background-color: var(--body-color);
+  }
+
+  body::-webkit-scrollbar {
+    width: 8px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: var(--body-color);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: var(--black-color);
+  }
+  body::-webkit-scrollbar-thumb:hover {
+    background-color: var(--blue-color);
+  }
+
+  a {
+    text-decoration: none !important;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  figure {
+    margin: 0;
+    overflow: hidden;
+  }
+
+  :root {
+    --blue-color: #2b2c43;
+    --body-color: #f6f4f0;
+    --grey-color: #616171;
+    --grey-two-color: #686877;
+    --grey-three-color: #81828b;
+    --white-color: #ffffff;
+    --black-color: #000000;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+    margin: 0;
+  }
+  p {
+    margin: 0;
+  }
+  @font-face {
+    font-family: timr45w;
+    src: url(../fonts/timr45w.ttf);
+  }
+  /* header css start */
+
+  .navbar-nav li {
+    padding: 0px 16px;
+  }
+
+  .navbar-nav li a {
+    color: var(--blue-color) !important;
+    font-weight: 500;
+    padding: 0 !important;
+    position: relative;
+    z-index: 0;
+    transition: all ease 0.5s;
+  }
+  .navbar-nav li a.active:before {
+    width: 100%;
+    height: 2px;
+  }
+  .navbar-nav li a.active {
+    font-weight: 700;
+  }
+  .navbar-nav li a:before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--blue-color);
+    transition: all ease 0.5s;
+  }
+
+  .navbar-nav li a:hover:before {
+    transition: all ease 0.5s;
+    width: 100%;
+  }
+
+  .mian-top {
+    position: relative;
+    z-index: 0;
+    width: 45%;
+  }
+
+  .mian-top .form-control {
+    background: transparent;
+    border: 1px solid var(--blue-color);
+    border-radius: 30px;
+    padding: 10px 35px;
+    width: 100%;
+    margin-left: auto;
+  }
+
+  .mian-top .form-control::placeholder {
+    color: var(--grey-color);
+  }
+
+  .mian-top i {
+    position: absolute;
+    z-index: 0;
+    right: 20px;
+    top: 15px;
+    color: var(--grey-color);
+  }
+
+  .side-bar-top {
+    justify-content: end;
+    gap: 5px;
+  }
+
+  .top-btn {
+    background: transparent;
+    border: 1px solid var(--blue-color);
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+
+  .top-head {
+    margin: 20px 0;
+  }
+  .top-head form {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 55%;
+  }
+
+  .top-head .form-control {
+    height: 55px;
+    background: var(--white-color);
+    border: 2px solid #0000002e;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-right: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
+
+  .top-head .form-control::placeholder {
+    color: var(--blue-color);
+  }
+  .head-btn {
+    width: 30%;
+    height: 55px;
+    border: 2px solid #0000002e;
+    border-radius: 0;
+    border-left: 0;
+    font-weight: 500;
+    color: var(--white-color);
+    background-color: var(--black-color);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+
+  .top-head p {
+    text-align: center;
+    font-weight: 400;
+    margin-top: 10px;
+    color: var(--blue-color);
+  }
+  /* header css end */
+
+  /* .home-banner css start */
+
+  .home-banner {
+    padding-bottom: 10px;
+  }
+
+  .banner-carousel {
+    margin: auto;
+    /* text-align: center; */
+    background: #f6f4f0e3;
+  }
+
+  .discover-book .top-para {
+    color: var(--grey-color);
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 0;
+  }
+  .discover-book .top-para:before {
+    position: absolute;
+    z-index: 10;
+    content: "";
+    left: 180px;
+    top: 10px;
+    width: 7px;
+    height: 7px;
+    border-radius: 60%;
+    background: var(--grey-color);
+  }
+  .discover-book .top-para:after {
+    position: absolute;
+    z-index: 10;
+    content: "";
+    right: 180px;
+    top: 10px;
+    width: 7px;
+    height: 7px;
+    border-radius: 60%;
+    background: var(--grey-color);
+  }
+
+  .discover-book h1 {
+    font-weight: 700;
+    color: var(--white-color);
+    font-size: 50px;
+    margin-bottom: 30px;
+  }
+
+  .discover-book p {
+    color: var(--white-color);
+    font-weight: 500;
+    font-size: 20px;
+    margin: auto;
+    width: 90%;
+    margin-top: 0;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .discover-book .data-p {
+    font-weight: 400;
+    color: var(--grey-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+  }
+  .banner-carousel .owl-dots {
+    margin-top: 50px !important;
+  }
+
+  .banner-carousel .owl-dots .owl-dot span {
+    background: #6161714f !important;
+  }
+
+  .banner-carousel .owl-dots .owl-dot.active span {
+    background: var(--grey-color) !important;
+  }
+
+  .discover-book p span {
+    font-weight: bold;
+    font-size: 25px;
+  }
+  .back-img img {
+    height: 600px;
+    width: 100%;
+  }
+
+  .discover-book {
+    padding: 30px 50px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+  }
+
+  .sea_Galilee {
+    background-image: url(../images/sea-of-galilee.jpg);
+  }
+
+  .sea_Galilee:before {
+      background: #00000000 !important;
+  }
+  /*.sea_Galilee p {*/
+  /*    font-size:25px;*/
+  /*}*/
+  .sealdimg {
+    background-image: url(../images/christ-feet-1.jpg);
+  }
+
+  .fellowseald {
+    background-image: url(../images/empty-tomb-1.jpg);
+  }
+
+  .discover-book:before {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #0000006b;
+    width: 100%;
+    height: 100%;
+  }
+  /* .home-banner css end */
+
+  /* .five-img css start */
+
+  .main-five {
+    padding-top: 50px;
+    border-top: 1px solid var(--blue-color);
+  }
+
+  .main-five h2 {
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    color: var(--blue-color);
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 0;
+  }
+  .main-five h2:before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    left: 44%;
+    bottom: -25px;
+    width: 12%;
+    height: 1px;
+    margin: auto;
+    background: var(--blue-color);
+  }
+  .main-first {
+    background: var(--white-color);
+    padding: 20px;
+    margin-bottom: 15px;
+  }
+
+  .I-main figure img {
+    animation: zoom-in 4s ease-out infinite;
+  }
+  .I-G-content h5 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin-top: 12px;
+    line-height: 25px;
+  }
+
+  .I-G-content p {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--blue-color);
+    margin-top: 5px;
+    text-align: justify;
+  }
+
+  .I-G-content .p-nov {
+    color: var(--grey-color);
+    font-weight: 400;
+    font-size: 13px;
+    margin-top: 10px;
+  }
+  .mid-img .mid-top {
+    margin-top: 30px;
+    font-weight: 400;
+    color: var(--grey-color);
+    font-size: 16px;
+  }
+
+  .mid-img h3 {
+    font-size: 27px;
+    font-weight: 700;
+    color: var(--blue-color);
+    margin-bottom: 10px;
+  }
+
+  .mid-img .I-G-content p {
+    margin-top: 20px;
+    margin-bottom: 22px;
+  }
+
+  .mid-img .I-G-content a {
+    color: var(--blue-color);
+    font-family: "Playfair Display";
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .video-youtube {
+    padding-bottom: 20px;
+  }
+  /* .five-img css end */
+
+  /* .top-story css start */
+
+  .top-story .mid-img {
+    background: transparent;
+  }
+
+  .top-story {
+    padding-top: 50px;
+  }
+
+  .I-G-content h2 {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--blue-color);
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 0;
+  }
+
+  .I-G-content h2:before {
+    position: absolute;
+    z-index: 0;
+    content: "";
+    left: 0;
+    bottom: -15px;
+    width: 25%;
+    height: 1px;
+    margin: auto;
+    background: var(--blue-color);
+  }
+
+  .top-story .main-first {
+    margin-top: 30px;
+  }
+  .I-main {
+    position: relative;
+    z-index: 0;
+  }
+
+  .I-main .ps-img {
+    position: absolute;
+    z-index: 0;
+    left: 43%;
+    top: 40%;
+    text-align: center;
+    width: 15%;
+  }
+  .youtube-sec .mid-img h3 {
+    line-height: 35px;
+  }
+
+  /* .top-story css end */
+
+  /* news-letter css end */
+
+  .news-letter .main-five {
+    border: none;
+  }
+
+  .news-letter .main-five h2:before {
+    display: none;
+  }
+
+  .news-letter .main-five h2:before {
+    margin-bottom: 0;
+  }
+
+  .news-letter .main-five h2 {
+    margin-bottom: 0;
+  }
+
+  .news-letter {
+    text-align: center;
+    padding-bottom: 70px;
+  }
+
+  .news-letter .main-five p {
+    font-weight: 400;
+    color: var(--grey-three-color);
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .email-from {
+    margin: auto;
+    margin-top: 40px;
+    width: 40%;
+  }
+
+  .email-from form {
+    display: flex;
+    align-items: center;
+  }
+  .email-from form .form-control {
+    background: var(--white-color);
+    padding: 15px 30px;
+    border: 1px solid var(--black-color);
+    border-radius: 0;
+    border-right: 0;
+  }
+  .go-btn {
+    padding: 15px;
+    border: 1px solid var(--black-color);
+    border-radius: 0;
+    background: var(--white-color);
+    color: var(--blue-color) !important;
+    font-weight: 600;
+  }
+  .email-from form .form-control::placeholder {
+    color: #68687773;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  /* news-letter css end */
+
+  /* footer css start */
+
+  footer {
+    background: var(--black-color);
+    padding: 20px;
+  }
+
+  .last-para p {
+    color: var(--white-color);
+    text-align: center;
+    font-weight: 500;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+
+  /* footer css end */
+
+  /* keyframe css start */
+
+  /* @keyframes zoom-in {
+    0% {
+      transform: scale(1.1);
+    }
+    25% {
+      transform: scale(1.2);
+    }
+    50% {
+      transform: scale(1.3);
+    }
+    75% {
+      transform: scale(1.2);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  } */
+
+  /* keyframe css end */
