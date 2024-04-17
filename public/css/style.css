@@ -355,6 +355,7 @@ body {
 
   .I-main figure img {
     animation: zoom-in 4s ease-out infinite;
+    width: 100%;
   }
   .I-G-content h5 {
     font-size: 18px;
@@ -562,3 +563,17 @@ body {
   } */
 
   /* keyframe css end */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+.video-youtube p {
+    text-align: center;
+}

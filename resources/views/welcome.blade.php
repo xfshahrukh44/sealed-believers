@@ -62,7 +62,7 @@
 
               </div>
          </div>
-         <div class="row">
+         <div class="row justify-content-center">
             @foreach ($videoLink as $value)
                 <div class="col-lg-4">
                     <div class="video-youtube">

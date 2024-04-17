@@ -29,3 +29,17 @@
       padding: 10px 20px;
   }
   }
+  
+  
+  
+  @media (max-width: 567px) {
+    a.navbar-brand img {
+    height: 100px;
+}
+
+.head-btn {
+    font-size: 14px;
+}
+  }
+  
+  

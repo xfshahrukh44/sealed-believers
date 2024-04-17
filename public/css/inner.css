@@ -2,7 +2,7 @@
 .main-heading {
     background-image: url(../images/faith-bg.png);
     background-position: top;
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 300px;
     display: flex;

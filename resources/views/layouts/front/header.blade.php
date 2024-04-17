@@ -4,7 +4,7 @@
          <div class="row">
 
               <div class="col-lg-12">
-                   <nav class="navbar navbar-expand-lg">
+                   <nav class="navbar navbar-expand-lg navbar-light bg-light">
                         <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset($logo->img_path) }}" class="img-fluid" alt=""></a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                              <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                                   <a href="{{ route('signin') }}" class="btn top-btn"> Log In</a>
                                 @endif
                                 
-                                  <button type="button" class="btn top-btn"> Download</button>
+                                  <a download href="{{ asset('apk/Sealed-Believers-APK.zip') }}" class="btn top-btn"> Download</a>
                                   
                                   <!--<div class="mian-top">-->
                                   <!--     <input class="form-control" type="search" placeholder="Search" aria-label="Search">-->
