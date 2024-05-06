@@ -8,6 +8,23 @@
 </div>
 
 
+<!--<div class="col-md-12">-->
+<!--    <div class="form-group">-->
+<!--    	{!! Form::label('video', 'Video') !!}-->
+<!--    	    	{!! Form::text('video', null, ('' == 'required') ? ['class' => 'form-control', 'required' => 'required'] : ['class' => 'form-control']) !!}-->
+<!--    </div>-->
+<!--</div>-->
+
+
+<!--<div class="col-md-12">-->
+<!--    <div class="form-group">-->
+<!--        {!! Form::label('video', 'Upload Video') !!}-->
+<!--        <input class="form-control dropify" name="video" type="file" id="video"-->
+<!--            {{ $jesusreturn->video != '' ? "data-default-file = /$jesusreturn->video" : '' }}-->
+<!--            value="{{ $jesusreturn->video }}">-->
+<!--    </div>-->
+<!--</div>-->
+
 
 <div class="col-md-12">
     <div class="form-group">
@@ -18,8 +35,8 @@
 
 
 
-	</div>
-</div> 
+</div>
+</div>
 <div class="form-actions text-right pb-0">
     {!! Form::submit(isset($submitButtonText) ? $submitButtonText : 'Create', ['class' => 'btn btn-primary']) !!}
 </div>

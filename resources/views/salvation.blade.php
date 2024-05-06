@@ -29,7 +29,7 @@
         <div class="row">
 
             
-             @foreach ($interview as $value)
+              @foreach ($salvation as $value)
                 <div class="col-lg-4">
                     <div class="video-youtube">
                        {!! $value->video_iframe !!}

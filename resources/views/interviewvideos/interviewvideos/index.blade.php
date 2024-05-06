@@ -47,7 +47,8 @@
                                 <thead>
                                     <tr>
                                         <th>#</th>
-                                        <th>Title</th><th>Video</th>
+                                        <th>Title</th>
+                                        <th>Video Iframe</th>
                                         <th>Actions</th>
                                     </tr>
                                 </thead>
@@ -55,13 +56,9 @@
                                     @foreach($interviewvideos as $item)
                                     <tr>
                                     <td>{{ $item->id }}</td>
-                                    <td>{{ $item->title }}</td>
-                                    <td>
-                                        <video width="300" height="200" controls>
-                                            <source src="{{ asset($item->video) }}" type="video/mp4">
-                                        </video>
-
-                                    </td>
+                                     <td>{{ $item->title }}</td>
+                                    <td>{!! $item->video_iframe !!}</td>
+                                  
                                     <td>
 
 
@@ -94,7 +91,8 @@
                                 <tfoot>
                                     <tr>
                                         <th>#</th>
-                                        <th>Title</th><th>Video</th>
+                                        <th>Title</th>
+                                        <th>Video Iframe</th>
                                         <th>Actions</th>
                                     </tr>
                                 </tfoot>

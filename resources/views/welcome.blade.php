@@ -23,25 +23,29 @@
                                   </div>
                              </div>
                              @endforeach
-                             {{-- <div class="item">
-                                  <div class="discover-book sealdimg">
-
-                                       <p>Bringing together family and friends to deepen our understanding and faith in
-                                            Jesus Christ.</p>
-                                       <p><span>Ephesians 1:13</span> In him you also, when you heard the word of
-                                            truth, the gospel of your salvation, and believed in him, were sealed with
-                                            the promised Holy Spirit</p>
-                                  </div>
-                             </div>
-                             <div class="item">
-                                  <div class="discover-book fellowseald">
-                                       <h1>Fellowship</h1>
-                                       <p>Our community stands as a testament to our shared belief and commitment to
-                                            grow together in our faith in Christ. Together, we will encourage each
-                                            other, share Gods message of love and salvation with others, and prepare
-                                            ourselves for the future. Jesus is coming, let’s be ready. </p>
-                                  </div>
-                             </div> --}}
+                             {{-- 
+                                <div class="item">
+                                      <div class="discover-book sealdimg">
+    
+                                           <p>Bringing together family and friends to deepen our understanding and faith in
+                                                Jesus Christ.</p>
+                                           <p><span>Ephesians 1:13</span> In him you also, when you heard the word of
+                                                truth, the gospel of your salvation, and believed in him, were sealed with
+                                                the promised Holy Spirit
+                                            </p>
+                                      </div>
+                                 </div>
+                                 <div class="item">
+                                      <div class="discover-book fellowseald">
+                                           <h1>Fellowship</h1>
+                                           <p>Our community stands as a testament to our shared belief and commitment to
+                                                grow together in our faith in Christ. Together, we will encourage each
+                                                other, share Gods message of love and salvation with others, and prepare
+                                                ourselves for the future. Jesus is coming, let’s be ready. 
+                                            </p>
+                                      </div>
+                                 </div> 
+                            --}}
                         </div>
                    </div>
               </div>
@@ -101,19 +105,28 @@
                         </div>
                    </div>
               </div>
+              
+              
               <div class="col-lg-3">
+              <a href="{{ URL('prophecy') }}">
                    <div class="main-first" data-aos="fade-up-right" data-aos-duration="2000">
                         <div class="I-main">
+                            
                              <figure>
                                   <img src="{{ asset($section[0]->value) }}" class="img-fluid" alt="">
                              </figure>
+                            
                         </div>
                         <div class="I-G-content">
                              <h5>{!! $section[1]->value !!}</h5>
                         </div>
                    </div>
+               </a>
               </div>
+               
+               
               <div class="col-lg-3">
+                  <a href="{{ URL('salvation') }}">
                    <div class="main-first" data-aos="fade-down" data-aos-duration="2000">
                         <div class="I-main">
                              <figure>
@@ -124,8 +137,12 @@
                              <h5>{!! $section[3]->value !!}</h5>
                         </div>
                    </div>
+                   </a>
               </div>
+              
+              
               <div class="col-lg-3">
+                  <a href="{{ URL('interviews') }}">
                    <div class="main-first" data-aos="fade-down" data-aos-duration="2000">
                         <div class="I-main">
                              <figure>
@@ -136,8 +153,12 @@
                              <h5>{!! $section[5]->value !!}</h5>
                         </div>
                    </div>
+                   </a>
               </div>
+              
+              
               <div class="col-lg-3">
+                  <a href="{{ URL('jesusreturn') }}">
                    <div class="main-first" data-aos="fade-up-left" data-aos-duration="2000">
                         <div class="I-main">
                              <figure>
@@ -148,10 +169,13 @@
                              <h5>{!! $section[7]->value !!}</h5>
                         </div>
                    </div>
+                   </a>
               </div>
          </div>
     </div>
 </section>
+
+
 
 <!--<section class="five-img">-->
 <!--     <div class="container">-->

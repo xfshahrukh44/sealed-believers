@@ -4,14 +4,14 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Interviewvideo extends Model
+class Salvation extends Model
 {
     /**
      * The database table used by the model.
      *
      * @var string
      */
-    protected $table = 'interviewvideos';
+    protected $table = 'salvations';
 
     /**
     * The database primary key value.

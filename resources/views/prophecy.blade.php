@@ -28,15 +28,13 @@
         </div>
         <div class="row">
 
-            
-             @foreach ($interview as $value)
+            @foreach ($prophecy as $value)
                 <div class="col-lg-4">
                     <div class="video-youtube">
                        {!! $value->video_iframe !!}
                     </div>
             </div>
             @endforeach
-
 
 
         </div>

@@ -166,7 +166,7 @@ Route::get('signout', function() {
         Session::flash('flash_message', 'You have logged out  Successfully');
         Session::flash('alert-class', 'alert-success');
 
-        return redirect('signin');
+        return redirect('signin'); 
 });
 
 Route::get('logout','Auth\LoginController@logout');
@@ -193,9 +193,11 @@ Route::get('about','HomeController@about')->name('about');
 Route::get('contact','HomeController@contact')->name('contact');
 Route::get('join','HomeController@join')->name('join');
 Route::get('interviews','HomeController@interviews')->name('interviews');
+Route::get('prophecy','HomeController@prophecy')->name('prophecy');
+Route::get('salvation','HomeController@salvation')->name('salvation');
+Route::get('jesusreturn','HomeController@jesusreturn')->name('jesusreturn');
 
-
-
+      
 
 Route::post('careerSubmit','HomeController@careerSubmit')->name('contactUsSubmit');
 Route::post('newsletter-submit','HomeController@newsletterSubmit')->name('newsletterSubmit');
@@ -277,3 +279,7 @@ Route::resource('Israelppt/israelppt', 'Israelppt\IsraelpptController');
 Route::resource('interviewvideos/interviewvideos', 'interviewvideos\InterviewvideosController');
 
 Route::resource('requestinterview/requestinterview', 'requestinterview\RequestinterviewController');
+
+Route::resource('prophecy/prophecy', 'Prophecy\ProphecyController'); 
+Route::resource('salvation/salvation', 'Salvation\SalvationController');
+Route::resource('jesusreturn/jesusreturn', 'Jesusreturn\JesusreturnController');

@@ -7,19 +7,19 @@
 @section('content')
 <div class="content-header row">
     <div class="content-header-left col-md-8 col-12 mb-2 breadcrumb-new">
-        <h3 class="content-header-title mb-0 d-inline-block">Videolinks</h3>
+        <h3 class="content-header-title mb-0 d-inline-block">Prophecy</h3>
         <div class="row breadcrumbs-top d-inline-block">
             <div class="breadcrumb-wrapper col-12">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item active">Home</li>
-                    <li class="breadcrumb-item active">Videolinks</li>
+                    <li class="breadcrumb-item active">Prophecy</li>
                 </ol>
             </div>
         </div>
     </div>
     <div class="content-header-right col-md-4 col-12">
         <div class="btn-group float-md-right">
-            <a class="btn btn-info mb-1" href="{{ url('/videolinks/videolinks/create') }}">Add Videolinks</a>
+            <a class="btn btn-info mb-1" href="{{ url('/prophecy/prophecy/create') }}">Add Prophecy</a>
         </div>
     </div>
 </div>
@@ -29,7 +29,7 @@
         <div class="col-12">
             <div class="card">
                 <div class="card-header">
-                    <h4 class="card-title">Videolinks Info</h4>
+                    <h4 class="card-title">Prophecy Info</h4>
                     <a class="heading-elements-toggle"><i class="la la-ellipsis-v font-medium-3"></i></a>
                     <div class="heading-elements">
                         <ul class="list-inline mb-0">
@@ -53,35 +53,36 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($videolinks as $item)
+                                    @foreach($prophecy as $item)
                                     <tr>
                                     <td>{{ $item->id }}</td>
                                     <td>{{ $item->title }}</td>
                                     <td>{!! $item->video_iframe !!}</td>
+                                   
                                     <td>
 
-
-                                            <a href="{{ url('/videolinks/videolinks/' . $item->id . '/edit') }}"
-                                               title="Edit Videolink">
+                                        
+                                            <a href="{{ url('/prophecy/prophecy/' . $item->id . '/edit') }}"
+                                               title="Edit Prophecy">
                                                 <button class="btn btn-primary btn-sm">
                                                     <i class="fa fa-pencil-square-o" aria-hidden="true"> </i> Edit
                                                 </button>
                                             </a>
+                                        
 
-
-
+                                        
                                             {!! Form::open([
                                        'method'=>'DELETE',
-                                       'url' => ['/videolinks/videolinks', $item->id],
+                                       'url' => ['/prophecy/prophecy', $item->id],
                                        'style' => 'display:inline'
                                    ]) !!}
                                             {!! Form::button('<i class="fa fa-trash-o" aria-hidden="true"></i> Delete', array(
                                                     'type' => 'submit',
                                                     'class' => 'btn btn-danger btn-sm',
-                                                    'title' => 'Delete Videolink',
+                                                    'title' => 'Delete Prophecy',
                                                     'onclick'=>'return confirm("Confirm delete?")'
                                             )) !!}
-
+                                        
                                         {!! Form::close() !!}
                                     </td>
                                 </tr>

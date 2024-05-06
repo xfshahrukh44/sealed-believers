@@ -21,6 +21,9 @@ use App\Models\Faith;
 use App\Models\Videolink;
 use App\Models\Israelppt;
 use App\Models\Interviewvideo;
+use App\Models\Prophecy;
+use App\Models\Salvation;
+use App\Models\Jesusreturn;
 
 class HomeController extends Controller
 {
@@ -118,6 +121,30 @@ class HomeController extends Controller
         return view('interviews', compact('page', 'interview'));
     }
 
+
+
+    public function prophecy(){
+        $page = DB::table('pages')->where('id', 10)->first();
+        $prophecy = Prophecy::all();
+        return view('prophecy', compact('page', 'prophecy'));
+    }
+
+
+    public function salvation(){
+        $page = DB::table('pages')->where('id', 11)->first();
+        $salvation = Salvation::all();
+        return view('salvation', compact('page', 'salvation'));
+    }
+
+
+    public function jesusreturn(){
+        $page = DB::table('pages')->where('id', 12)->first();
+        $jesusreturn = Jesusreturn::all();
+        return view('jesusreturn', compact('page', 'jesusreturn'));
+    }
+
+
+      
 
 
     public function careerSubmit(Request $request)

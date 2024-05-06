@@ -40,6 +40,36 @@
 .head-btn {
     font-size: 14px;
 }
+
+.discover-book h1 {
+    text-align: center;
+}
+
+.discover-book p {
+    width: 100%;
+    font-size: 18px;
+}
+.top-story .main-first {
+    margin-top: -20px;
+    margin-bottom: 0px;
+}
+.navbar-nav li {
+    margin-top: 5px;
+    text-align: center;
+}
+
+.side-bar-top {
+    justify-content: center;
+}
+
+.top-btn {
+    padding: 5px 22px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.main-heading {
+    height: 180px;
+}
   }
   
   
